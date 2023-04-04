@@ -41,7 +41,7 @@ services:
       - wp_data:/var/www/html
     depends_on:
       - nginx
-    command: certonly --webroot --webroot-path=/var/www/html --email m738958977@gmail.com --agree-tos --no-eff-email -d mohammesalhuraibi.me
+    command: certonly --webroot --webroot-path=/var/www/html --email mohammed.alhuraibi123@gmail.com --agree-tos --no-eff-email -d mohammedalhuraibi.com  
 
 volumes:
   db_data:
