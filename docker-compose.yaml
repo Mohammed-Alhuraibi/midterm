@@ -1,4 +1,5 @@
-version: '3.9'
+
+version: '3'
 
 services:
   db:
@@ -42,11 +43,10 @@ services:
     volumes:
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
-    command: certonly --webroot --webroot-path=/var/www/html --email mohammed.alhuraibi123@gmail.com --agree-tos --no-eff-email -d mohammedsaeed.me
+    command: certonly --webroot --webroot-path=/var/www/html --email youremail@example.com --agree-tos --no-eff-email -d mohammedsaeed.me
 
 volumes:
   db_data:
   wp_data:
   certbot-etc:
   certbot-var:
-
